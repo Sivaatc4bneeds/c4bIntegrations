@@ -1,0 +1,84 @@
+jQuery(function($){
+	$(window).bind("load", function() {
+var footer = $("#footer");
+var pos = footer.position();
+var height = $(window).outerHeight();
+height = height - pos.top;
+height = height - footer.outerHeight();
+    if (height > 0) {
+  footer.css({'margin-top' : height+'px'});
+  }
+});
+
+	$(window).resize(function(){
+		var footer = $("#footer");
+		var pos= footer.position();
+		var height= $(window).outerHeight();
+		height = height - pos.top;
+		height = height - footer.outerHeight();
+		if (height > 0){
+			footer.css({'margin-top' : height+'px'});
+		}
+	});
+});
+
+// CSS3 animated & responsive dropdown menu
+// http://www.red-team-design.com/css3-animated-dropdown-menu
+jQuery(function($){
+		/* Mobile */
+var count = 0;
+$('#menu-wrap').prepend('<div id="menu-trigger"><i class="fa fa-2x fa-bars"></i></div>');
+$("#menu-trigger").on("click", function(){
+$("#menu").slideToggle();
+
+console.log(count);
+if(count == 1){
+	$('.logo-social').removeClass('hide-header');
+	count = 0;
+}
+
+else{
+	$('.logo-social').addClass('hide-header');
+	count = 1;
+}
+
+console.log(count);
+});
+
+		/* iPad
+		var isiPad = navigator.userAgent.match(/iPad/i) !== null;
+		if (isiPad) $('#menu ul').addClass('no-transition');
+		*/
+});
+
+
+jQuery( document ).ready(function() {
+	if (jQuery(window).width() > 1100){
+    jQuery('.hero-bar').hover(function(){
+    	jQuery('.home-hero').addClass('animate');
+    }, function(){
+    	jQuery('.home-hero').removeClass('animate');
+    });
+	}
+});
+
+
+jQuery( window ).resize(function() {
+	if (jQuery(window).width() > 1100){
+    jQuery('.hero-bar').hover(function(){
+    	jQuery('.home-hero').addClass('animate');
+    }, function(){
+    	jQuery('.home-hero').removeClass('animate');
+    });
+	}
+});
+
+
+jQuery( document ).ready(function() {
+    jQuery('.hero-bar').hover(function(){
+    	jQuery(this).addClass('animate-bar');
+    }, function(){
+    	jQuery(this).removeClass('animate-bar');
+    });
+});
+
