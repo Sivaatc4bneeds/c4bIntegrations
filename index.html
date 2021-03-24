@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
@@ -26,6 +25,14 @@
 			sizes="180x180"
 			href="img/apple-touch-icon.png"
 		/>
+		
+
+		<link rel="stylesheet" href="css/settings.css" />
+		<link rel="stylesheet" href="css/theme-settings.css" />
+
+
+		<link rel="stylesheet" href="css/responsive.css" />
+		
 
 		<!-- Google Fonts -->
 		<link
@@ -48,28 +55,64 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		
-		
 
-		
-		
-		
-		
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/plugins/ionicons.min.css" />
 		<link rel="stylesheet" href="css/plugins/justifiedGallery.min.css" />
 		<link rel="stylesheet" href="css/plugins/slick-theme.css" />
 		<link rel="stylesheet" href="css/plugins/slick.css" />
 		<link rel="stylesheet" href="css/plugins/YouTubePopUp.css" />
-		<link rel="stylesheet" href="css/plugins/animate.css" />
-		<link rel="stylesheet" href="css/plugins/swiper.min.css" />
-
-		<!-- Plugins -->
+		
 		<link rel="stylesheet" href="css/plugins.css" />
-
-		<!-- Core Style Css -->
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/plugins/swiper.min.css" />
+		<link rel="stylesheet" href="css/plugins/animate.css" />
+		
+		
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/jquery-migrate-3.0.0.min.js"></script>
 
+		<!-- plugins -->
+		<script src="js/plugins.js"></script>
+
+		<!-- custom scripts -->
+		<script src="js/scripts.js"></script>
+
+		<!-- Fonts -->
+
+		<link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
+		<link rel="stylesheet" href="css/fontawesome-all.min.css" />
+
+	
+
+
+		<!-- revolution slider -->
+		<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+
+		<!-- Scroll Bar -->
+
+		<style>
+			/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+			
+			/* Track */
+			::-webkit-scrollbar-track {
+			  background: #f1f1f1; 
+			}
+			 
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: #888; 
+			}
+			
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555; 
+			}
+			</style>
 		
 	</head>
 
@@ -107,17 +150,7 @@
 		<nav class="navbar change navbar-expand-lg">
 			<div class="container">
 				<!-- Logo -->
-				<!-- <a class="logo" href="#">
-					<header id="header">
-						<div class="inner">
-							<img src="img/intro/Logo.png" alt="" />
-							<nav id="nav">
-								<a href="index.html"></a>
-								
-							</nav>
-						</div>
-					</header> 
-				</a> -->
+
 				<a class="logo" href="#">
 					<img src="img/intro/Logo.png" alt="logo" />
 					<nav id="nav">
@@ -142,34 +175,23 @@
 				<!-- navbar links -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto" id="header-wrapper">
-						<!-- <li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								data-toggle="dropdown"
-								href="#"
-								role="button"
-								aria-haspopup="true"
-								aria-expanded="false"
-								>Home</a
-							>
-						</li> -->
-						
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
-						<!-- <li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								data-toggle="dropdown"
-								href="#services"
-								role="button"
-								aria-haspopup="true"
-								aria-expanded="false"
-								>Services</a
-							>
-						</li> -->
-						<li class="nav-item">
-							<a class="nav-link" href="#services">Services</a>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+								aria-haspopup="true" aria-expanded="false">Services</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="showcase.html">Maintainance and Operations</a>
+								<a class="dropdown-item" href="showcase2.html">program and Project Management</a>
+								<a class="dropdown-item" href="showcase3.html">software Development</a>
+								<a class="dropdown-item" href="showcase4.html">Systems Integrations</a>
+								<a class="dropdown-item" href="showcase4.html">Agriculture Application Development</a>
+								<a class="dropdown-item" href="showcase4.html">Medicaid Eligibility Solutions</a>
+								<a class="dropdown-item" href="showcase4.html">Web Application Development</a>
+								<a class="dropdown-item" href="showcase4.html">Mobile App Development</a>
+							</div>
 						</li>
 
 						<li class="nav-item">
@@ -197,232 +219,205 @@
 
 		<!-- ==================== End Navbar ==================== -->
 
-		<!-- ==================== Avo Start Slider ==================== -->
 		
-		<header class="slider slider-prlx fixed-slider text-center">
-			<div class="swiper-container parallax-slider">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div
-							class="bg-img valign"
-							data-background="img/video/silent.gif"
-							data-overlay-dark="6"
-						>
-							<div class="container">
-								<div class="row justify-content-center">
-									<div class="col-lg-7 col-md-9">
-										<div class="caption center">
-											<!-- <h1 data-splitting>
-												Cloud  <br />
-												Services
-											</h1>
-											<p>
-												We are web application developers based on cloud technology
-											</p> -->
-											<!-- <a href="#0" class="btn-curve btn-lit mt-30">
-												<span>Look More</span>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div
-							class="bg-img valign"
-							data-background="img/video/silent.gif"
-							data-overlay-dark="6"
-						>
-							<div class="container">
-								<div class="row justify-content-center">
-									<div class="col-lg-7 col-md-9">
-										<div class="caption center">
-											<!-- <h1 data-splitting>
-												Cloud  <br />
-												Services
-											</h1>
-											<p>
-												We are web application developers based on cloud technology
-											</p> -->
-											<!-- <a href="#0" class="btn-curve btn-lit mt-30">
-												<span>Look More</span>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div
-							class="bg-img valign"
-							data-background=""
-							data-overlay-dark="6"
-						>
-							<div class="container">
-								<div class="row justify-content-center">
-									<div class="col-lg-7 col-md-9">
-										<div class="caption center">
-											<h1 data-splitting>
-												Cloud  <br />
-												Services
-											</h1>
-											<p style="color: #597cbc;">
-												We are web application developers based on cloud technology
-											</p>
-											<!-- <a href="#0" class="btn-curve btn-lit mt-30">
-												<span>Look More</span>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div
-							class="bg-img valign"
-							data-background=""
-							data-overlay-dark="6"
-						>
-							<div class="container">
-								<div class="row justify-content-center">
-									<div class="col-lg-7 col-md-9">
-										<div class="caption center">
-											<h1 data-splitting>
-												Digital <br />
-												Design Awards
-											</h1>
-											<p style="color: #597cbc;">
-												If you need to redesign your new project, new visual
-												strategy, ux structure or you do have some cool ideas
-												for collaboration.
-											</p>
-											<!-- <a href="#0" class="btn-curve btn-lit mt-30">
-												<span>Look More</span>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div
-							class="bg-img valign"
-							data-background="" 
-							data-overlay-dark="6"
-						>
-							<div class="container">
-								<div class="row justify-content-center">
-									<div class="col-lg-7 col-md-9">
-										<div class="caption center">
-											<h1 data-splitting>Original Solutions</h1>
-											<p style="color: #597cbc;">
-												If you need to redesign your new project, new visual
-												strategy, ux structure or you do have some cool ideas
-												for collaboration.
-											</p>
-											<!-- <a href="#0" class="btn-curve btn-lit mt-30">
-												<span>Look More</span>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div
-							class="bg-img valign"
-							data-background="img/video/digital.gif"
-							data-overlay-dark="6"
-						>
-							<div class="container">
-								<div class="row justify-content-center">
-									<div class="col-lg-7 col-md-9">
-										<div class="caption center">
-											<!-- <h1 data-splitting>
-												Digital <br />
-												Design Awards
-											</h1>
-											<p>
-												If you need to redesign your new project, new visual
-												strategy, ux structure or you do have some cool ideas
-												for collaboration.
-											</p> -->
-											<!-- <a href="#0" class="btn-curve btn-lit mt-30">
-												<span>Look More</span>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div
-							class="bg-img valign"
-							data-background="img/video/digital.gif"
-							data-overlay-dark="6"
-						>
-							<div class="container">
-								<div class="row justify-content-center">
-									<div class="col-lg-7 col-md-9">
-										<div class="caption center">
-											<!-- <h1 data-splitting>
-												Digital <br />
-												Design Awards
-											</h1>
-											<p>
-												If you need to redesign your new project, new visual
-												strategy, ux structure or you do have some cool ideas
-												for collaboration.
-											</p> -->
-											<!-- <a href="#0" class="btn-curve btn-lit mt-30">
-												<span>Look More</span>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> 
+                           <!-- Start Slider -->
+		<div class="tp-wrapper no-bottom-margin" style="">
+			<!-- .tp-banner-container start -->
+			<div class="tp-banner">
+				<ul>
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+					<!-- main image -->
+					<img src="img/video/silent.gif"  alt="slidebg1"  data-bgposition="left top" data-bgrepeat="no-repeat"/>
+				   </li>
 
-		
+					<!-- slide 2 start -->
+					<li data-transition="fade" data-slotamount="15" data-masterspeed="1500">
+						<!-- main image -->
+						<img src="img/slider/slide-1-1.jpg"  alt="slidebg3" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
 
-		</header> 
+						<!-- layer 1 -->
+						<div class="tp-caption regular lft"
+							 data-x="220"
+							 data-y="55"
+							 data-speed="600"
+							 data-start="1000"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><b style="color: black;"><b>C4B Solutions</b> designs our <b>solution to meet 99.9%</b>.</b>
+						</div>
 
-	<!-- 	slider setting -->
-		
-       <!--  <header>       
-				<div class="setone setwo">
-					<div class="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer" tabindex="0" role="button" aria-label="Next slide">
-						<i class="fas fa-chevron-right"></i>
-					</div>
+						<!-- layer 2 -->
+						<div class="tp-caption regular sfl"
+							 data-x="200"
+							 data-y="120"
+							 data-speed="600"
+							 data-start="1500"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><img src='img/slider/slide-1-2.png' style="width: 100% !important; height: 450px !important;" alt='mobile devices'/>
+						</div>
+
+						<!-- layer 3 -->
+						<div class="tp-caption list-right sfl"
+							 data-x="160"
+							 data-y="180"
+							 data-speed="600"
+							 data-start="2000"
+							 data-easing="Back.easeOut"
+							 data-endspeed="500"><p style="color:#fff">Customer support is available </p>
+						</div>
+
+						<!-- layer 4 -->
+						<div class="tp-caption list-right sfl"
+							 data-x="70"
+							 data-y="240"
+							 data-speed="600"
+							 data-start="2300"
+							 data-easing="Back.easeOut"
+							 data-endspeed="500"><p style="color:#fff">C4B Solutions embraces standards</p>
+						</div>
+
+						<!-- layer 3 -->
+						<div class="tp-caption list-right sfl"
+							 data-x="60"
+							 data-y="300"
+							 data-speed="600"
+							 data-start="2600"
+							 data-easing="Back.easeOut"
+							 data-endspeed="500"><p style="color:#fff">Experienced Staff</p>
+						</div>
+
+						<!-- layer 4 -->
+						<div class="tp-caption list-left sfr"
+							 data-x="900"
+							 data-y="180"
+							 data-speed="600"
+							 data-start="2900"
+							 data-easing="Back.easeOut"
+							 data-endspeed="500"><p style="color:#fff">Delivering your needs</p>
+						</div>
+
+						<!-- layer 5 -->
+						<div class="tp-caption list-left sfr"
+							 data-x="870"
+							 data-y="240"
+							 data-speed="600"
+							 data-start="3200"
+							 data-easing="Back.easeOut"
+							 data-endspeed="500"><p style="color:#fff">Collaborative Approach</p>
+						</div>
+
+						<!-- layer 6 -->
+						<div class="tp-caption list-left sfr"
+							 data-x="840"
+							 data-y="300"
+							 data-speed="600"
+							 data-start="3500"
+							 data-easing="Back.easeOut"
+							 data-endspeed="500"><p style="color:#fff">Effective Status </p>
+						</div>
+					</li>
+					<!-- slide 2 start -->
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+						<!-- main image -->
+						<img src="img/slider/slide-2-1.png"  alt="slidebg2" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+						<!-- layer 1 -->
+						<div class="tp-caption regular lft"
+							 data-x="0"
+							 data-y="80"
+							 data-speed="600"
+							 data-start="1000"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><b style="color: black;"><b>Clean</b> Design with <b>Powerful</b> Code.</b>
+							 
+						</div>
+
+						<!-- layer 2 -->
+						<div class="tp-caption regular small sfl"
+							 data-x="405"
+							 data-y="130"
+							 data-speed="600"
+							 data-start="1500"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><b style="color: black;">That's C4B Solutions</b>
+						</div>
+
+						<!-- layer 3 -->
+						<div class="tp-caption sfr"
+							 data-x="520"
+							 data-y="45"
+							 data-speed="600"
+							 data-start="1500"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><img src='img/slider/slide-2-2.png' style="width: 100% !important; height: 450px !important;" alt='slider image'/>
+						</div>
+
+						<!-- layer 4 -->
+						<div class="tp-caption list-left sfl"
+							 data-x="0"
+							 data-y="170"
+							 data-speed="600"
+							 data-start="2200"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><p style="color:#fff">Quality Assurance</p>
+						</div>
+
+						<!-- layer 5 -->
+						<div class="tp-caption list-left sfl"
+							 data-x="0"
+							 data-y="230"
+							 data-speed="600"
+							 data-start="2500"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><p style="color:#fff">Controlling project risk.</p>
+						</div>
+
+						<!-- layer 6 -->
+						<div class="tp-caption list-left sfl"
+							 data-x="0"
+							 data-y="290"
+							 data-speed="600"
+							 data-start="2700"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><p style="color:#fff">Robust Project management Plan</p>
+						</div>
+					</li>
+
+					<!-- slide 3 start -->
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+						<!-- main image -->
+						<img src="img/slider/slide-3-1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+						<!-- layer 1 -->
+						<div class="tp-caption background lft"
+							 data-x="70"
+							 data-y="140"
+							 data-speed="600"
+							 data-start="1000"
+							 data-easing="Back.easeOut"
+							 data-endspeed="300"><b style="color: black;">C4B Solutions <b>Embraces</b> standards, including <b>SOA</b>and <b>MITA</b>.</b>
+						</div> 
+
+						<!-- layer 2 -->
+						<div class="tp-caption background paragraph lfb"
+							 data-x="370"
+							 data-y="220"
+							 data-speed="600"
+							 data-start="2000"
+							 data-easing="Back.easeOut"
+							 data-endspeed="500">C4B Solutions hand-selects each program governance <br>team to create an experienced, capable, and <br />knowledgeable team to implement a project.
+						</div>
+					</li>
+					<li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+						<!-- main image -->
+						<img  class="video" src="img/video/digital.gif" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+					</li>
 					
-					<div class="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer" tabindex="0" role="button" aria-label="Previous slide">
-						<i class="fas fa-chevron-left"></i>
-					</div>
-				</div>
-				<div class="swiper-pagination top botm custom-font swiper-pagination-fraction">
+				</ul>
 					
-				</div>
-				
 
-				<div class="social-icon">
-					<a href="#0"><i class="fab fa-facebook-f"></i></a>
-					<a href="#0"><i class="fab fa-twitter"></i></a>
-					<a href="#0"><i class="fab fa-behance"></i></a>
-					<a href="#0"><i class="fab fa-pinterest-p"></i></a>
-				</div>
-				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 			</div>
-		</header>
- -->
-		<!-- ==================== Avo End Slider ==================== -->
+
+		<!-- ==================== End Slider ==================== -->
 
 		<div class="main-content">
 			<!-- ==================== Start about ==================== -->
@@ -452,14 +447,13 @@
 						<div class="col-lg-6 offset-lg-1 valign">
 							<div class="content">
 								<div class="sub-title">
-									<h6 style="color: #febb2b;"
-									>About Us</h6>
+									<h6 style="color: #febb2b">About Us</h6>
 									<span></span>
 									<span></span>
 									<span></span>
 								</div>
 								<h3 class="main-title wow" data-splitting>
-									We support applications with Cloud Technology...<br />
+									What we Offer<br />
 								</h3>
 								<p class="wow txt" data-splitting>
 									We tend to adapt the best strategy to make software
@@ -467,32 +461,25 @@
 									high-quality integrated products.
 								</p>
 
-								<h5>Getting to know you</h5>
+								<h5>Project Management</h5>
 								<p>
-									Every requirement is unique, but they all start with one thing
-									in common: Detailed Comprehension. We strive for growth and
-									perfection by Requirement Analysis to deliver the product that
-									fully meets the Client's goals.
+									Key to our success in delivering your needs are effective status and projec t management planning, reporting, identification and mitigation of risks, clear, concise, and continuous communication, and a collaborative approach.
 								</p>
 
-								<h5>Prepare Blueprint</h5>
+								<h5>Software Consultancy</h5>
 								<p>
-									Drawing a Blueprint gives precision in the requirement. We
-									design architecture with full flow and share it with the
-									client. This gives us an end to end flow and clarity for both
-									parties.
+									Our Comprehensive solutions and services range across business functions including strategy level, solution evaluation and acquisition, requirements scoping, development and implementation, roll-out and user training, hand-holding support during go-live and ongoing support.
 								</p>
 
-								<h5>The final Product</h5>
+								<h5>Software Development & Design</h5>
 								<p>
-									Finally all modules are put together to come up with the final
-									product to run successfully in market.
+									We have found that a significant drawback with the traditional waterfall-based software development methodology is the significant amount of time spent between system design and testing.
 								</p>
 
 								<div class="ftbox mt-30">
 									<ul>
 										<li class="wow fadeIn" data-wow-delay=".3s">
-											<span class="icon pe-7s-helm "></span>
+											<span class="icon pe-7s-helm"></span>
 											<h6 class="custom-font">Mission <br /></h6>
 											<div class="dots">
 												<span></span>
@@ -559,10 +546,11 @@
 							<h6>
 								Cloud <br />
 								Services
-								
 							</h6>
 							<p>
-								To be able to maximize the benefits of the cloud, you need to be able to balance both your business objectives and cloud solutions to ensure the least amount of complexity.
+								To be able to maximize the benefits of the cloud, you need to be
+								able to balance both your business objectives and cloud
+								solutions to ensure the least amount of complexity.
 							</p>
 						</div>
 						<div
@@ -573,9 +561,13 @@
 							<h6>
 								Web & Mobile<br />
 								App Development
-							
 							</h6>
-							<p>We expertise in developing applications for iPhone, iPad, Android phone, Android pad that use live API based data, backend to manage the data and all in between to deliver a stunning, secure solution..</p>
+							<p>
+								We expertise in developing applications for iPhone, iPad,
+								Android phone, Android pad that use live API based data, backend
+								to manage the data and all in between to deliver a stunning,
+								secure solution..
+							</p>
 						</div>
 						<div
 							class="col-lg-3 col-md-6 item-box wow fadeInLeft"
@@ -587,9 +579,11 @@
 								and Operations
 							</h6>
 							<p>
-								The M&O team has the right combination of experienced staff, adherence to service management processes, state-domain knowledge, and local presence to provide the best possible M&O support to you.
-
-								</p>
+								The M&O team has the right combination of experienced staff,
+								adherence to service management processes, state-domain
+								knowledge, and local presence to provide the best possible M&O
+								support to you.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -660,9 +654,9 @@
 												data-background="img/portfolio/works/1.jpg"
 											></div>
 											<div class="cont">
-												<h6 style="color: #febb2b";> Our Projects</h6>
+												<h6 style="color: #febb2b" ;>Our Projects</h6>
 												<h4>
-													<a href="project-details.html" style="color: #597cbc;"
+													<a href="project-details.html" style="color: #597cbc"
 														>Document Managenment System.</a
 													>
 												</h4>
@@ -681,9 +675,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Planting Profits</a
-													>
+													<a href="project-details.html">Planting Profits</a>
 												</h4>
 											</div>
 										</div>
@@ -700,9 +692,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>EZ Bulletin.</a
-													>
+													<a href="project-details.html">EZ Bulletin.</a>
 												</h4>
 											</div>
 										</div>
@@ -719,9 +709,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Revamping.</a
-													>
+													<a href="project-details.html">Revamping.</a>
 												</h4>
 											</div>
 										</div>
@@ -739,7 +727,8 @@
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
 													<a href="project-details.html"
-														>ID card with QR code and PDF generation functionality.</a
+														>ID card with QR code and PDF generation
+														functionality.</a
 													>
 												</h4>
 											</div>
@@ -776,9 +765,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>We Fetch.</a
-													>
+													<a href="project-details.html">We Fetch.</a>
 												</h4>
 											</div>
 										</div>
@@ -814,9 +801,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Veg Bharat .</a
-													>
+													<a href="project-details.html">Veg Bharat .</a>
 												</h4>
 											</div>
 										</div>
@@ -852,9 +837,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Eggdee.</a
-													>
+													<a href="project-details.html">Eggdee.</a>
 												</h4>
 											</div>
 										</div>
@@ -871,9 +854,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Plan Finder.</a
-													>
+													<a href="project-details.html">Plan Finder.</a>
 												</h4>
 											</div>
 										</div>
@@ -890,9 +871,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Fashion Hippi.</a
-													>
+													<a href="project-details.html">Fashion Hippi.</a>
 												</h4>
 											</div>
 										</div>
@@ -909,9 +888,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Clinical App.</a
-													>
+													<a href="project-details.html">Clinical App.</a>
 												</h4>
 											</div>
 										</div>
@@ -928,9 +905,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>OfferNaiza.</a
-													>
+													<a href="project-details.html">OfferNaiza.</a>
 												</h4>
 											</div>
 										</div>
@@ -966,9 +941,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>ClothStreet.</a
-													>
+													<a href="project-details.html">ClothStreet.</a>
 												</h4>
 											</div>
 										</div>
@@ -985,9 +958,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Taxi App.</a
-													>
+													<a href="project-details.html">Taxi App.</a>
 												</h4>
 											</div>
 										</div>
@@ -1004,9 +975,7 @@
 											<div class="cont">
 												<h6><a href="#0">Our Projects</a></h6>
 												<h4>
-													<a href="project-details.html"
-														>Grocery Market.</a
-													>
+													<a href="project-details.html">Grocery Market.</a>
 												</h4>
 											</div>
 										</div>
@@ -1038,7 +1007,7 @@
 			<section class="block-sec">
 				<div
 					class="background bg-img section-padding pb-0"
-					data-background="img/slider/slide-2-1.png"
+					data-background="http://www.c4bsolutionsinc.com/img/slider/slide-2-1.png"
 					data-overlay-dark="8"
 				>
 					<div class="container">
@@ -1046,14 +1015,14 @@
 							<div class="col-lg-6">
 								<div class="vid-area">
 									<div class="vid-icon">
-										<a class="vid" href="https://www.youtube.com/watch?v=OqJDFaDJ5wc">
+										<a
+											class="vid"
+											href="https://www.youtube.com/watch?v=OqJDFaDJ5wc"
+										>
 											<div class="vid-butn">
 												<span class="icon">
-													<i class="fas fa-play"></i>
+													<i class="fas fa-play" style="color: #febb2b;"></i>
 												</span>
-												
-											
-												
 											</div>
 										</a>
 									</div>
@@ -1061,9 +1030,6 @@
 									<div class="cont">
 										<h3 class="wow" data-splitting>
 											We support applications with cloud technology...
-
-
-
 										</h3>
 									</div>
 								</div>
@@ -1080,9 +1046,7 @@
 									</div>
 									<div class="slic-item wow fadeInUp" data-wow-delay=".5s">
 										<div class="item">
-											<p>
-												
-											</p>
+											<p></p>
 											<div class="info">
 												<div class="img">
 													<div class="img-box">
@@ -1091,20 +1055,14 @@
 												</div>
 												<div class="cont">
 													<div class="author">
-														<h6 class="author-name custom-font">
-															
-														</h6>
-														<span class="author-details"
-															></span
-														>
+														<h6 class="author-name custom-font"></h6>
+														<span class="author-details"></span>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="item">
-											<p>
-												
-											</p>
+											<p></p>
 											<div class="info">
 												<div class="img">
 													<div class="img-box">
@@ -1113,20 +1071,14 @@
 												</div>
 												<div class="cont">
 													<div class="author">
-														<h6 class="author-name custom-font">
-														
-														</h6>
-														<span class="author-details"
-															></span
-														>
+														<h6 class="author-name custom-font"></h6>
+														<span class="author-details"></span>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="item">
-											<p>
-												
-											</p>
+											<p></p>
 											<div class="info">
 												<div class="img">
 													<div class="img-box">
@@ -1135,12 +1087,8 @@
 												</div>
 												<div class="cont">
 													<div class="author">
-														<h6 class="author-name custom-font">
-															
-														</h6>
-														<span class="author-details"
-															></span
-														>
+														<h6 class="author-name custom-font"></h6>
+														<span class="author-details"></span>
 													</div>
 												</div>
 											</div>
@@ -1152,6 +1100,7 @@
 					</div>
 				</div>
 			</section>
+			
 
 			<!-- ==================== End block-sec ==================== -->
 
@@ -1169,7 +1118,7 @@
 												<span class="custom-font">90%</span>
 											</div>
 											<div class="cont">
-												<span style="color:#597cbc">Project</span>
+												<span style="color: #597cbc">Project</span>
 												<h6>Consulting</h6>
 											</div>
 										</div>
@@ -1180,7 +1129,7 @@
 												<span class="custom-font">75%</span>
 											</div>
 											<div class="cont">
-												<span style="color:#597cbc">App</span>
+												<span style="color: #597cbc">App</span>
 												<h6>Development</h6>
 											</div>
 										</div>
@@ -1215,7 +1164,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".3s">
 											<div class="img">
 												<img src="img/clients/brands/1.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1223,7 +1174,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".6s">
 											<div class="img">
 												<img src="img/clients/brands/2.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1231,7 +1184,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".8s">
 											<div class="img">
 												<img src="img/clients/brands/3.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1239,7 +1194,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".3s">
 											<div class="img">
 												<img src="img/clients/brands/4.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1249,7 +1206,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".4s">
 											<div class="img">
 												<img src="img/clients/brands/5.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1257,7 +1216,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".7s">
 											<div class="img">
 												<img src="img/clients/brands/6.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1265,7 +1226,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".5s">
 											<div class="img">
 												<img src="img/clients/brands/7.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1273,7 +1236,9 @@
 										<div class="item wow fadeIn" data-wow-delay=".3s">
 											<div class="img">
 												<img src="img/clients/brands/8.png" alt="" />
-												<a href="#0" class="link" data-splitting>www.c4bintegrations.com</a>
+												<a href="#0" class="link" data-splitting
+													>www.c4bintegrations.com</a
+												>
 											</div>
 										</div>
 									</div>
@@ -1291,9 +1256,9 @@
 			<section class="blog-curs section-padding sub-bg">
 				<div class="container">
 					<div class="sec-head custom-font text-center">
-						<h6 class="wow fadeIn" data-wow-delay=".5s">Latest News</h6>
-						<h3 class="wow" data-splitting>Our Blogs.</h3>
-						<span class="tbg">Blogs</span>
+						<h1 class="wow fadeIn" data-wow-delay=".5s" style="color: #febb2b;">Our Development process</h1>
+						<h3 class="wow" data-splitting></h3>
+						<span class="tbg">Process</span>
 					</div>
 					<div class="row">
 						<div class="col-12">
@@ -1303,23 +1268,23 @@
 										<div class="bimg">
 											<div
 												class="img bg-img"
-												data-background="img/blog/1.jpg"
+												data-background="img/pictures/development-1.png"
 											></div>
 										</div>
 										<div class="cont valign">
 											<div class="full-width">
 												<div class="info custom-font">
 													<a href="#0" class="author">
-														<span>by / Admin</span>
+														<span style="color: #febb2b;">Modular Transformation</span>
 													</a>
-													<a href="#0" class="date">
+													<!-- <a href="#0" class="date">
 														<span><i>06</i> Aug</span>
-													</a>
+													</a> -->
 												</div>
 												<h6 class="custom-font">
 													<a href="#0"
-														>The Start-Up Ultimate Guide to Make Your WordPress
-														Journal.</a
+														>
+														We transform the complete blueprint in fine modules. Goal is to divide the project into sprints and retrospect these sprints to client.</a
 													>
 												</h6>
 												<div class="btn-more custom-font">
@@ -1334,23 +1299,23 @@
 										<div class="bimg">
 											<div
 												class="img bg-img"
-												data-background="img/blog/2.jpg"
+												data-background="img/pictures/development-2.png"
 											></div>
 										</div>
 										<div class="cont valign">
 											<div class="full-width">
 												<div class="info custom-font">
 													<a href="#0" class="author">
-														<span>by / Admin</span>
+														<span style="color: #febb2b;">Estimation & Research</span>
 													</a>
-													<a href="#0" class="date">
+													<!-- <a href="#0" class="date">
 														<span><i>06</i> Aug</span>
-													</a>
+													</a> -->
 												</div>
 												<h6 class="custom-font">
 													<a href="#0"
-														>The Start-Up Ultimate Guide to Make Your WordPress
-														Journal.</a
+														>
+														Delivering quality product for you is more than our job. So we endeavor to get Adaptability with the requirement..</a
 													>
 												</h6>
 												<div class="btn-more custom-font">
@@ -1365,23 +1330,23 @@
 										<div class="bimg">
 											<div
 												class="img bg-img"
-												data-background="img/blog/3.jpg"
+												data-background="img/pictures/development-3.png"
 											></div>
 										</div>
 										<div class="cont valign">
 											<div class="full-width">
 												<div class="info custom-font">
 													<a href="#0" class="author">
-														<span>by / Admin</span>
+														<span style="color: #febb2b;">Turn ideas into reality</span>
 													</a>
-													<a href="#0" class="date">
+													<!-- <a href="#0" class="date">
 														<span><i>06</i> Aug</span>
-													</a>
+													</a> -->
 												</div>
 												<h6 class="custom-font">
 													<a href="#0"
-														>The Start-Up Ultimate Guide to Make Your WordPress
-														Journal.</a
+														>
+														Each module goes through different phases; Planning, Designing, Development, Testing and Review.</a
 													>
 												</h6>
 												<div class="btn-more custom-font">
@@ -1391,7 +1356,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="item-box">
+								<!-- <div class="item-box">
 									<div class="item">
 										<div class="bimg">
 											<div
@@ -1421,7 +1386,7 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -1429,7 +1394,81 @@
 			</section>
 
 			<!-- ==================== End Blog ==================== -->
+			
+			<div class="col-lg-6 offset-lg-1 valign">
+				<div class="content">
+					<div class="sub-title">
+						<h4 style="color: #febb2b" >Program and Project Management</h4>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					
+						
+							C4B Solutions's robust project management plan represents the foundation of our overall project approach. While we bring to bear a project management methodology immersed in industry standards and best practices, we recognize the importance of streamlining our approach to fit the specific needs of each state.
+						
 
+						<hr>
+
+						
+							Our collective experience has been refined through our successful and on-time performance on the implementation and operations of multiple, diverse healthcare projects for various government and commercial clients.
+					
+					
+
+						<hr>
+
+						
+							
+								C4B Solutions works closely and collaboratively with you to validate that the functions of the system are appropriately aligned with policy and practices.
+							
+						<hr>
+
+					
+								C4B Solutions knows the critical importance of measuring the success of any large-scale systems integration project against business needs, rather than detailed technical requirements.
+						
+						
+				    </b>
+
+
+					
+					
+
+					
+
+					<!-- <div class="ftbox mt-30">
+						<ul>
+							<li class="wow fadeIn" data-wow-delay=".3s">
+								<span class="icon pe-7s-helm"></span>
+								<h6 class="custom-font">Mission <br /></h6>
+								<div class="dots">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</li>
+							<li class="space wow fadeIn" data-wow-delay=".5s">
+								<span class="icon pe-7s-look"></span>
+								<h6 class="custom-font">Vision <br /></h6>
+								<div class="dots">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</li>
+							<li class="wow fadeIn" data-wow-delay=".8s">
+								<span class="icon pe-7s-graph1"></span>
+								<h6 class="custom-font">Strategies<br /></h6>
+								<div class="dots">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</li>
+						</ul>
+					</div> -->
+				</div>
+		    </div>
+		
 			<!-- ==================== Start call-to-action ==================== -->
 
 			<section
@@ -1463,9 +1502,35 @@
 
 			<!-- ==================== Start Footer ==================== -->
 
-			<footer class="footer-half sub-bg section-padding pb-0">
+			<!-- <footer class="footer-half sub-bg section-padding pb-0">
 				<div class="container">
 					<div class="row">
+						
+						<div class="col-lg-5">
+							<div class="cont">
+								<div class="logo">
+									<a href="#0">
+										<img src="img/intro/Logo.png" alt="" />
+									</a>
+								</div>
+								<div class="con-info custom-font">
+									<h6
+										class="custom-font stit simple-btn"
+										style="color: #febb2b"
+									>
+										IT Services
+									</h6>
+									<ul>
+										<li><span><a href="Softwaredevelopment.html">Software Development</a></span></li>
+										<li>
+											<span><a href="webdevelopment.html">Web App Development</a></span>
+										</li>
+										<li><span><a href="MobileAppDevelopment.html">Mobile App Development</a></span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
 						<div class="col-lg-5">
 							<div class="cont">
 								<div class="logo">
@@ -1474,63 +1539,71 @@
 									</a>
 								</div>
 								<div class="con-info custom-font">
+									<h6
+										class="custom-font stit simple-btn"
+										style="color: #febb2b"
+									>
+										SERVICES
+									</h6>
 									<ul>
-										<li><span>Email : </span> support@c4bsolutionsinc.com</li>
-										<li>
-											<span>Address : </span>10646 Clarke Farms Dr, Parker, CO 80134, USA
-										</li>
-										<li><span>Phone : </span>+3033253494</li>
+										<li><span><a href="M&D.html">Maintainance and Operations</a></span></li>
+										<li><span><a href="P&PM.html">Program and Project Management</a></span></li>
+										<li><span><a href="SI.html">Systems Integration</a></span></li>
+										<li><span><a href="MMIS.html">MMIS Solutions</a></span></li>
+										<li><span><a href="MES.html">Medicaid eligibility solution</a></span></li>
+										<li><span><a href="Privateexchange.html">Private Exchange</a></span></li>
 									</ul>
 								</div>
-								<div class="social-icon">
-									<h6 class="custom-font stit simple-btn" style="color: #febb2b;">Follow Us</h6>
-									<div class="social">
-										<a href="#0" class="icon">
-											<i class="fab fa-facebook-f"></i>
+								
+							</div>
+						</div>
+						
+							<div class="col-lg-6">
+								<div class="cont">
+									<div class="logo">
+										<a href="#0">
+											<img src="" alt="" />
 										</a>
-										<a href="#0" class="icon">
-											<i class="fab fa-twitter"></i>
-										</a>
-										<a href="#0" class="icon">
-											<i class="fab fa-pinterest"></i>
-										</a>
-										<a href="#0" class="icon">
-											<i class="fab fa-behance"></i>
-										</a>
+									</div>
+									<div class="con-info custom-font">
+										<ul>
+											<li><span>Email : </span> support@c4bsolutionsinc.com</li>
+											<li>
+												<span>Address : </span>10646 Clarke Farms Dr, Parker, CO
+												80134, USA
+											</li>
+											<li><span>Phone : </span>+3033253494</li>
+										</ul>
+									</div>
+									<div class="social-icon">
+										<h6
+											class="custom-font stit simple-btn"
+											style="color: #febb2b"
+										>
+											Follow Us
+										</h6>
+										<div class="social">
+											<a href="https://www.facebook.com/C4B-Solutions-1128480050535894/" class="icon">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+											<a href="https://twitter.com/C4bSanjai" class="icon">
+												<i class="fab fa-twitter"></i>
+											</a>
+											<a href="https://www.linkedin.com/in/c4b-solutions-29ba36117/" class="icon">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+											<a href="" class="icon">
+												<i class="fab fa-google-plus-g"></i>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-5 offset-lg-2">
-							<div class="subscribe mb-50">
-								<h6 class="custom-font stit simple-btn" style="color: #febb2b;">Newslatter</h6>
-								<p>Sign up for subscribe out newsletter!</p>
-								<form>
-									<div class="form-group custom-font">
-										<input
-											type="email"
-											name="subscribe"
-											placeholder="Your Email"
-										/>
-										<button class="cursor-pointer">Subscribe</button>
-									</div>
-								</form>
-							</div>
-							<div class="insta">
-								<h6 class="custom-font stit simple-btn" style="color: #febb2b;">Instagram Post</h6>
-								<div class="insta-gallary">
-									<a href="#0">
-										<img src="img/insta/1.jpg" alt="" />
-									</a>
-									<a href="#0">
-										<img src="img/insta/2.jpg" alt="" />
-									</a>
-									<a href="#0">
-										<img src="img/insta/3.jpg" alt="" />
-									</a>
-								</div>
-							</div>
-						</div>
+
+						
+					
+						
+						
 					</div>
 					<div class="copyrights text-center">
 						<p>
@@ -1539,27 +1612,142 @@
 						</p>
 					</div>
 				</div>
-			</footer>
+			</footer>  -->
+			<!-- ==================== Start Footer ==================== -->
 
+			<footer class="footer">
+				<div class="siteFooterBar">
+					<div class="content">
+						<img src="img/intro/Logo1.png" style="width: 280px; padding-left: 180px; margin-top: 20px;" >
+							
+					</div>
+				</div>
+				
+				
+				<div class="container bottom_border">
+				   <div class="row">
+					
+					  <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+						
+						 <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+						 <!--headin5_amrc-->
+						 <p class="mb10">We tend to adapt the best strategy to make software development easy for our Clients, which results in delivering high-quality integrated products.
+
+						</p>
+						 <p><i class="fa fa-location-arrow"></i> Address :  10646 CLARKE FRAMS DR. PARKER, CO 80134 </p>
+						 <p><i class="fa fa fa-envelope"></i> E-Mail : admin@c4bintegrations.com </p>
+						 <p><i class="fa fa-phone"></i> Phone :  +1 (303) 249-1744  </p>
+					  </div>
+					  <div class=" col-sm-4 col-md  col-6 col">
+						 <h5 class="headin5_amrc col_white_amrc pt2">IT Services</h5>
+						 <!--headin5_amrc-->
+						 <ul class="footer_ul_amrc">
+							<li><a href="http://webenlance.com">  Software Development</a></li>
+							<li><a href="http://webenlance.com">Web Application Development</a></li>
+							<li><a href="http://webenlance.com">Mobile App Development</a></li>
+							
+						 </ul>
+						 <!--footer_ul_amrc ends here-->
+					  </div>
+					  <div class=" col-sm-4 col-md  col-6 col">
+						 <h5 class="headin5_amrc col_white_amrc pt2">Services</h5>
+						 <!--headin5_amrc-->
+						 <ul class="footer_ul_amrc">
+							<li><a href="http://webenlance.com">Maintainance and Operations</a></li>
+							<li><a href="http://webenlance.com">Program and Project Management</a></li>
+							<li><a href="http://webenlance.com">Systems Integration</a></li>
+							<li><a href="http://webenlance.com">MMIS Solutions</a></li>
+							<li><a href="http://webenlance.com">Medicaid eligibility solution</a></li>
+							<li><a href="http://webenlance.com">Private Exchange</a></li>
+							
+						 </ul>
+						 <!--footer_ul_amrc ends here-->
+					  </div>
+					  <!-- <div class=" col-sm-4 col-md  col-12 col">
+						 <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+						 
+						 <ul class="footer_ul2_amrc">
+							<li>
+							   <a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+							   <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+							</li>
+							<li>
+							   <a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+							   <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+							</li>
+							<li>
+							   <a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+							   <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+							</li>
+						 </ul>
+					 </div> -->
+					 
+				   </div>
+				</div>
+				<div class="container">
+				   <ul class="foote_bottom_ul_amrc">
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="#">Services</a></li>
+					  <li><a href="about.html">About</a></li>
+					  <li><a href="works.html">Portfolio</a></li>
+					  
+					  <li><a href="contact.html">Contact</a></li>
+				   </ul>
+				   <!--foote_bottom_ul_amrc ends here-->
+				   <p class="text-center" style="color: #febb2b;">© COPYRIGHT C4B SOLUTION 2021. ALL RIGHTS RESERVED.<a href="#"></a></p>
+				   <ul class="social_footer_ul">
+					  <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+					  <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+					  <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+					  <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+				   </ul>
+				   <!--social_footer_ul ends here-->
+				</div>
+			 </footer>
+			 
+
+
+			
 			<!-- ==================== End Footer ==================== -->
 		</div>
 
 		<!-- jQuery -->
-		<script src="js/jquery-3.0.0.min.js"></script>
-		<script src="js/jquery-migrate-3.0.0.min.js"></script>
-
-		<!-- plugins -->
-		<script src="js/plugins.js"></script>
-
-		<!-- custom scripts -->
-		<script src="js/scripts.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 		
-		<!-- Fonts -->
 
-		<link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
-		<link rel="stylesheet" href="css/fontawesome-all.min.css" />
-		<!-- <script src="js/banner/include.js"></script>
-		<script src="js/banner/jquery.carouFredSel-6.2.1-packed.js"></script>
-		<script src="js/banner/nicescroll.min.js"></script> -->
+		
+		
+		
+		
+
+		<!-- Plugins -->
+		
+
+		<!-- Core Style Css -->
+		
+		
+		
 	</body>
+	<script>
+		$(document).ready(function ($) {
+			"use strict";
+
+			//REVOLUTION SLIDE
+			var revapi;
+			revapi = jQuery(".tp-banner").revolution({
+				delay: 5000,
+				startwidth: 1170,
+				startheight: 500,
+				hideThumbs: 10,
+				fullWidth: "on",
+				forceFullWidth: "on",
+				navigationType: "none", // bullet, thumb, none
+			});
+			$(".tp-bgimg:nth-child(4)").css("width","80% !important");
+			$(".tp-bgimg:nth-child(4)").css("margin-left","10% !important");
+		});
+	</script>
+	<!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+	
+	
 </html>
