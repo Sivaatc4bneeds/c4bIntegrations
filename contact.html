@@ -40,6 +40,8 @@
 		<link rel="stylesheet" href="css/plugins/animate.css" />
 		<link rel="stylesheet" href="css/plugins/swiper.min.css" />
 
+		<!-- <link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
+		<link rel="stylesheet" href="css/fontawesome-all.min.css" /> -->
 
     <!-- Plugins -->
     <link rel="stylesheet" href="css/plugins.css" />
@@ -47,7 +49,31 @@
     <!-- Core Style Css -->
     <link rel="stylesheet" href="css/style.css" />
 
-</head>
+
+		<style>
+			/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+			
+			/* Track */
+			::-webkit-scrollbar-track {
+			  background: #f1f1f1; 
+			}
+			 
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: #888; 
+			}
+			
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555; 
+			}
+			</style>
+
+		
+	</head>
 
 <body>
 
@@ -106,102 +132,100 @@
                 <span class="icon-bar"><i class="fas fa-bars"></i></span>
             </button>
 
-            <!-- navbar links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#"
-                            role="button"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            >Home</a
-                        > -->
-                        
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                        <!-- <div class="dropdown-menu">
-                            <a class="dropdown-item" href="index.html">Main Home</a>
-                            <a class="dropdown-item" href="index2.html">Creative Studio</a>
-                            <a class="dropdown-item" href="index3.html">Business Startup</a>
-                            <a class="dropdown-item" href="index4.html">One Page</a>
-                            <a class="dropdown-item" href="index5.html">Freelancer</a>
-                        </div> -->
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#"
-                            role="button"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            >Services</a
-                        > -->
-                        
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Services</a>
-                    </li>
-                        <!-- <div class="dropdown-menu">
-                            <a class="dropdown-item" href="showcase.html">Full Screen</a>
-                            <a class="dropdown-item" href="showcase2.html"
-                                >Creative Carousel</a
-                            >
-                            <a class="dropdown-item" href="showcase3.html"
-                                >Radius Carousel</a
-                            >
-                            <a class="dropdown-item" href="showcase4.html"
-                                >Columns Carousel</a
-                            >
-                        </div> -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#"
-                            role="button"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            >Portfolio</a
-                        >
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="works.html">Portfolio</a>
-                    </li>
-                        <!-- <div class="dropdown-menu">
-                            <a class="dropdown-item" href="works.html">Mouse Info</a>
-                            <a class="dropdown-item" href="works2.html"
-                                >Masonry 3 Columns</a
-                            >
-                            <a class="dropdown-item" href="works3.html"
-                                >Masonry 2 Columns</a
-                            >
-                            <a class="dropdown-item" href="works4.html">Pinterest List</a>
-                        </div> -->
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center custom-font">
-                        <form>
-                            <input type="text" name="search" placeholder="Search" />
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+				<!-- navbar links -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto" id="header-wrapper">
+						<!-- <li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								data-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>Home</a
+							> -->
+							
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+							<!-- <div class="dropdown-menu">
+								<a class="dropdown-item" href="index.html">Main Home</a>
+								<a class="dropdown-item" href="index2.html">Creative Studio</a>
+								<a class="dropdown-item" href="index3.html">Business Startup</a>
+								<a class="dropdown-item" href="index4.html">One Page</a>
+								<a class="dropdown-item" href="index5.html">Freelancer</a>
+							</div> -->
+						</li>
+						<!-- <li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								data-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>Services</a
+							> -->
+							
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+									aria-haspopup="true" aria-expanded="false">Services</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="m&o.html">Maintenance and Operations</a>
+									<a class="dropdown-item" href="ppm.html">program and Project Management</a>
+									<a class="dropdown-item" href="softwareDevelopment.html">software Development</a>
+									<a class="dropdown-item" href="systemsIntegration.html">Systems Integrations</a>
+									<a class="dropdown-item" href="showcase4.html">Agriculture Application Development</a>
+									<a class="dropdown-item" href="showcase4.html">Medicaid Eligibility Solutions</a>
+									<a class="dropdown-item" href="showcase4.html">Web Application Development</a>
+									<a class="dropdown-item" href="showcase4.html">Mobile App Development</a>
+								</div>
+							</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<!-- <li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								data-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>Portfolio</a
+							>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" href="works.html">Portfolio</a>
+						</li>
+							<!-- <div class="dropdown-menu">
+								<a class="dropdown-item" href="works.html">Mouse Info</a>
+								<a class="dropdown-item" href="works2.html"
+									>Masonry 3 Columns</a
+								>
+								<a class="dropdown-item" href="works3.html"
+									>Masonry 2 Columns</a
+								>
+								<a class="dropdown-item" href="works4.html">Pinterest List</a>
+							</div> -->
+						
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<div class="search">
+						<span class="icon pe-7s-search cursor-pointer"></span>
+						<div class="search-form text-center custom-font">
+							<form>
+								<input type="text" name="search" placeholder="Search" />
+							</form>
+							<span class="close pe-7s-close cursor-pointer"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
 
    
 
@@ -221,8 +245,11 @@
                                 you 24/7. Don’t hesitate to contact us.</h6>
                         </div>
 
-                        <div class="bactxt custom-font valign">
+                        <!-- <div class="bactxt custom-font valign">
                             <span class="full-width">Contact</span>
+                        </div> -->
+                        <div class="bactxt custom-font valign">
+                            <span class="full-width">Works</span>
                         </div>
                     </div>
                 </div>
@@ -313,28 +340,129 @@
 
 
         <!-- ==================== Start Map ==================== -->
-
-        <div class="map" id="ieatmaps"></div>
-
-        <!-- ==================== End Map ==================== -->
-
-
-        <!-- ==================== Start Footer ==================== -->
-
-        <footer class="footer-half sub-bg">
-            <div class="container">
-                <div class="copyrights text-center mt-0">
-                    <p>© COPYRIGHT C4B SOLUTION 2021. ALL RIGHTS RESERVED.<a href="#0"></a>.</p>
-                </div>
+        <div class="grid_12" >
+            <div class="triggerAnimation animated fadeInDown" data-animate="fadeInDown" style="padding-left: 170px; padding-right: 170px; padding-bottom: 100px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077.070800956254!2d-104.78516004950892!3d39.52188611739639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c91d899bb2fed%3A0xe3c15439ce621d71!2s10646+Clarke+Farms+Dr%2C+Parker%2C+CO+80134%2C+USA!5e0!3m2!1sen!2sin!4v1458123924065" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
-        </footer>
-
-        <!-- ==================== End Footer ==================== -->
+        </div>
 
 
     </div>
 
+        
+
+        
+
+
+        
+
+
+    
+
     <!-- ==================== End main-content ==================== -->
+    <!-- ==================== Start Footer ==================== -->
+
+		<footer class="footer">
+			<div class="siteFooterBar">
+				<div class="content">
+					<img src="img/intro/Logo1.png" style="width: 280px; padding-left: 180px; margin-top: 20px;" >
+						
+				</div>
+			</div>
+			
+			
+			<div class="container bottom_border">
+			   <div class="row">
+				
+				  <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+					
+					 <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+					 <!--headin5_amrc-->
+					 <p class="mb10">We tend to adapt the best strategy to make software development easy for our Clients, which results in delivering high-quality integrated products.
+
+					</p>
+					 <p><i class="fa fa-location-arrow"></i> Address :  10646 CLARKE FRAMS DR. PARKER, CO 80134 </p>
+					 <p><i class="fa fa fa-envelope"></i> E-Mail : admin@c4bintegrations.com </p>
+					 <p><i class="fa fa-phone"></i> Phone :  +1 (303) 249-1744  </p>
+					 <hr>
+
+						 <ul class="footer_ul_amrc">
+							<li><a href="contact.html" style="color: #febb2b; text-decoration: underline;">Find us on Map</a></li>
+						 </ul>
+				  </div>
+				  <div class=" col-sm-4 col-md  col-6 col">
+					 <h5 class="headin5_amrc col_white_amrc pt2">IT Services</h5>
+					 <!--headin5_amrc-->
+					 <ul class="footer_ul_amrc">
+						<li><a href="softwareDevelopment.html"> ⚬  Software Development</a></li>
+						<li><a href=""> ⚬  Web Application Development</a></li>
+						<li><a href=""> ⚬  Mobile App Development</a></li>
+						
+					 </ul>
+					 <!--footer_ul_amrc ends here-->
+				  </div>
+				  <div class=" col-sm-4 col-md  col-6 col">
+					 <h5 class="headin5_amrc col_white_amrc pt2">Services</h5>
+					 <!--headin5_amrc-->
+					 <ul class="footer_ul_amrc">
+						<li><a href="m&o.html">⚬ Maintenance and Operations</a></li>
+						<li><a href="ppm.html">⚬ Program and Project Management</a></li>
+						<li><a href="systemsIntegration.html">⚬ Systems Integration</a></li>
+						<li><a href="">⚬ MMIS Solutions</a></li>
+						<li><a href="">⚬ Medicaid eligibility solution</a></li>
+						<li><a href="">⚬ Private Exchange</a></li>
+						
+					 </ul>
+					 <!--footer_ul_amrc ends here-->
+				  </div>
+				  <!-- <div class=" col-sm-4 col-md  col-12 col">
+					 <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+					 
+					 <ul class="footer_ul2_amrc">
+						<li>
+						   <a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+						   <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+						</li>
+						<li>
+						   <a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+						   <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+						</li>
+						<li>
+						   <a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+						   <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+						</li>
+					 </ul>
+				 </div> -->
+				 
+			   </div>
+			</div>
+			<div class="container">
+			   
+			   <!--foote_bottom_ul_amrc ends here-->
+			   <p class="text-center" style="color: #febb2b;">© COPYRIGHT C4B SOLUTION 2021. ALL RIGHTS RESERVED.<a href="#"></a></p>
+			   <ul class="social_footer_ul">
+				  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+				  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+				  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+				  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+			   </ul>
+			   <!--social_footer_ul ends here-->
+               <ul class="foote_bottom_ul_amrc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+                			   <!--foote_bottom_ul_amrc ends here-->
+
+             </ul>
+			</div>
+		 </footer>
+		 
+
+
+		
+		<!-- ==================== End Footer ==================== -->
 
 
 
