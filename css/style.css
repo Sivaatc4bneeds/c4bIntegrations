@@ -63,7 +63,7 @@ body {
 	font-weight: 400;
 	overflow-x: hidden !important;
 	font-family: "Poppins", sans-serif;
-	/* background-color: aqua; */
+	background-color: rgb(201, 252, 252);
 }
 body.bd-dark {
 	color: #fff;
